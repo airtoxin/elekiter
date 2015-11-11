@@ -1,0 +1,31 @@
+{
+  "name": "elekiter",
+  "version": "0.0.1",
+  "description": "express like electron ipc wrapper library",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "babel -d dist/ src/",
+    "doc": "esdoc -c esdoc.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm test && npm start"
+  },
+  "repository": "airtoxin/elekiter",
+  "keywords": [
+    "electron",
+    "ipc",
+    "communication"
+  ],
+  "author": "airtoxin <airtoxin@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airtoxin/elekiter/issues"
+  },
+  "homepage": "https://github.com/airtoxin/elekiter#readme",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "esdoc": "^0.4.3",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+  }
+}
