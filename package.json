@@ -27,5 +27,6 @@
     "mocha": "^2.3.3"
   },
   "dependencies": {
+    "neo-async": "^1.6.0"
   }
 }
