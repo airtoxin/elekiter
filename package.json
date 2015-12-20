@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/airtoxin/elekiter#readme",
   "devDependencies": {
-    "babel": "^5.8.29",
+    "babel": "^6.3.13",
     "esdoc": "^0.4.3",
     "mocha": "^2.3.3"
   },
