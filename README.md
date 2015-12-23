@@ -1,4 +1,4 @@
-# elekiter
+# elekiter [![Build Status](https://travis-ci.org/airtoxin/elekiter.svg)](https://travis-ci.org/airtoxin/elekiter) [![npm version](https://badge.fury.io/js/elekiter.svg)](http://badge.fury.io/js/elekiter)
 express like electron ipc wrapper library
 
 ## Install
