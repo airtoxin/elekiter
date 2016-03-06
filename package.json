@@ -1,6 +1,6 @@
 {
   "name": "elekiter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "express like electron ipc wrapper library",
   "main": "dist/index.js",
   "scripts": {
