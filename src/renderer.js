@@ -3,7 +3,6 @@ import {ipcRenderer as ipc} from "electron";
 const CALLBACK_SUFFIX = '-elekiter-callback-suffix';
 
 export default class RendererElekiter {
-
     constructor() {
         this._ipc = ipc;
     };
@@ -16,7 +15,7 @@ export default class RendererElekiter {
      */
     request(path, ...params) {
         return new Promise((resolve, reject) => {
-            this._ipc.once(`${path}${CALLBACK_SUFFIX}`, (data) => {
+            this._ipc.once(`${path}${CALLBACK_SUFFIX}`, (event, data) => {
                 if (data.status) {
                     resolve(data.results);
                 } else {

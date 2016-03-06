@@ -4,7 +4,6 @@ import {ipcMain as ipc} from "electron";
 const CALLBACK_SUFFIX = '-elekiter-callback-suffix';
 
 export default class BrowserElekiter {
-
     constructor() {
         this._ipc = ipc;
         this._middlewares = [];
