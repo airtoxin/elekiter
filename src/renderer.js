@@ -1,4 +1,4 @@
-import ipc from "ipc";
+import {ipcRenderer as ipc} from "electron";
 
 const CALLBACK_SUFFIX = '-elekiter-callback-suffix';
 

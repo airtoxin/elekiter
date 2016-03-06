@@ -1,5 +1,5 @@
 import async from "neo-async";
-import ipc from "ipc";
+import {ipcMain as ipc} from "electron";
 
 const CALLBACK_SUFFIX = '-elekiter-callback-suffix';
 
