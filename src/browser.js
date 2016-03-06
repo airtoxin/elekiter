@@ -1,11 +1,12 @@
-const async = require('neo-async');
-const _ipc = require('ipc');
+import async from "neo-async";
+import ipc from "ipc";
+
 const CALLBACK_SUFFIX = '-elekiter-callback-suffix';
 
 export default class BrowserElekiter {
 
     constructor() {
-        this._ipc = _ipc;
+        this._ipc = ipc;
         this._middlewares = [];
     };
 
@@ -23,8 +24,7 @@ export default class BrowserElekiter {
      * @param  {function} callback - arguments is (req, res)
      */
     get(path, callback) {
-        let ipc = this._ipc;
-        ipc.on(path, (event, params) => {
+        this._ipc.on(path, (event, params) => {
             let req = {
                 params
             };
